@@ -88,7 +88,7 @@ namespace MicroRabbit.Infra.Bus
             // This implementation will be Done latter....
             StartBasicComsume<T>();
 
-            throw new NotImplementedException();
+           // throw new NotImplementedException();
         }
 
         private void StartBasicComsume<T>() where T : Event
@@ -111,7 +111,7 @@ namespace MicroRabbit.Infra.Bus
 
 
             channel.BasicConsume(eventName, true, consumer);
-            throw new NotImplementedException();
+           // throw new NotImplementedException();
         }
 
         private async Task Consumer_Received(object sender, BasicDeliverEventArgs e)
